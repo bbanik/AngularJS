@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AngularJS expressions</title>
+		<script src = "../Library/angular.min.js"></script>
+	</head>
+	<body ng-app>
+		<p>Binding difference can be found in the underlying code:</p>
+
+		<p>Enter first name</P>
+
+		<input ng-model="angFirstName" placeholder="Enter first name"/>
+
+		<p>Hello {{angFirstName}}
+
+		<p>Hi <span ng-bind="angFirstName"></span></p>
+	</body>
+</html>

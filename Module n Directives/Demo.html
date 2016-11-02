@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			AngularJS module & directive
+		</title>
+     	<script src = "../Library/angular.min.js"></script>
+		<script>
+			var ngMod = angular.module("ngMod",[]);
+			ngMod.controller("ctrlElement", function($scope){})
+			.directive("customDirectiveElement", function(){
+				return{
+					restrict: "E",
+					template: "Message set using directive in element."
+				};
+			});
+			ngMod.controller("ctrlAttribute", function($scope){})
+			.directive("customDirectiveAttribute", function(){
+				return{
+					restrict: "A",
+					template: "Message set using directive in attribute."
+				};
+			});
+		</script>
+	</head>
+	<body ng-app="ngMod">
+		<div ng-controller="ctrlElement">
+			<custom-directive-element></custom-directive>
+		</div>
+		<div ng-controller="ctrlAttribute">
+			<h4 custom-directive-attribute></h4>
+		</div>
+	</body>
+
+</html>

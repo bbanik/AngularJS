@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<title>Welcome {{angFirstName}}</title>
+      		<script src = "../Library/angular.min.js"></script>
+
+	</head>
+	<body ng-app>
+
+		<div ng-init="Employee={FirstName:'Angular',LastName:'JS'}"></div><br/>
+		<div>Full Name - {{Employee.FirstName + Employee.LastName}}</div>
+	</body>
+
+</html>

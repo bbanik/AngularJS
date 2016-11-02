@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AngularJS module & controller</title>
+     		<script src = "../Library/angular.min.js"></script>
+			<script>
+				var ngMod = angular.module("ngMod",[]);
+				ngMod.controller("ngCtrl", function($scope){
+					$scope.message = "This message has been set using angularjs module & controller.";
+				});
+			</script>
+	</head>
+	<body ng-app="ngMod" ng-controller="ngCtrl">
+		{{message}}
+	</body>
+
+</html>

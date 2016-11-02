@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<title>Welcome {{angFirstName}}</title>
+      		<script src = "../Library/angular.min.js"></script>
+
+	</head>
+	<body ng-app>
+
+		<div>First Name <input ng-model="angFirst"/></div><br/>
+		<div>Last Name <input ng-model="angSecond"/></div><br/>
+		<div>Full Name - {{angFirst + " " + angSecond}}</div>
+	</body>
+
+</html>
